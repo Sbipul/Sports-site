@@ -1,0 +1,503 @@
+/****************\
+google font link
+\****************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/****************\
+common css style
+\****************/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;}
+ul{
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+.flex {
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.bar {
+    display: none;
+}
+
+/*********************************\
+animation and keyframes css style
+\*********************************/
+@keyframes bipul {
+    0%{
+        border: rgb(255, 7, 48);
+        box-shadow: 5px 5px 5px aqua,-5px -5px 5px aqua,-5px 5px 5px aqua,5px -5px 5px aqua;
+        transform: rotate(0deg);
+    }
+    50%{
+        border: rgb(0, 255, 106);
+        transform: rotate(180deg);
+        box-shadow: 5px 5px 5px rgb(255, 1, 179),-5px -5px 5px rgb(255, 1, 179),5px -5px 5px rgb(255, 1, 179),-5px 5px 5px rgb(255, 1, 179);
+    }
+    100%{
+        border: rgb(255, 7, 48);
+        transform: rotate(360deg);
+        box-shadow: 5px 5px 5px aqua,-5px -5px 5px aqua,5px -5px 5px aqua,-5px 5px 5px aqua;
+    }
+}
+@keyframes bipul2 {
+    0%{
+        top: 143%;
+    }
+    50%{
+        top: 183%;
+    }
+    100%{
+        top: 143%;
+    }
+}
+@keyframes bipul3 {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.animation {
+	position: absolute;
+	height: 46px;
+	width: 49px;
+	border: 4px solid aqua;
+	top: 20%;
+	left: 3.7%;
+	animation: bipul 2s infinite;
+	border-radius: 100%;
+	animation: bipul 2s infinite;
+}
+
+.animation2 {
+	width: 100px;
+	position: absolute;
+	top: 143%;
+	left: 2%;
+    animation : bipul2 10s infinite;
+}
+/******************\
+Top header css style
+\******************/
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+header {
+    background: rgb(22, 80, 187);
+}
+header:hover {
+	background: linear-gradient(to right,#4268fd,#df3654,rgb(81, 159, 226));
+	transition: 1s;
+}
+.menu-item {
+    padding-top: 42px;
+}
+.menu-item ul li{
+    margin-right: 36px;
+}
+.menu-item ul li:hover a {
+	color: #ff002d;
+	transition: 1s;
+	transform: ;
+	font-size: 25px;
+}
+.menu-item ul li a{
+    color: white;
+}
+.button{
+    padding: 10px 24px;
+    background: #E02C6D;
+    color: white;
+}
+.button:hover {
+	transition: 1s;
+	background: white;
+	color: #E02C6D;
+	border: 1px solid #0087ff;
+}
+.button .fa-sign-out-alt {
+    margin-right: 8px;
+}
+
+/********************\
+banner css style
+\********************/
+.banner {
+    padding-bottom: 86px;
+    padding-top: 67px;
+}
+.headings{
+    width: 485px;
+}
+.headings h1 {
+	font-size: 64px;
+	color: #ffffff;
+}
+.player{
+    height: 438px;
+    width: 556px;
+    animation: bipul3 5s infinite;
+}
+.button .fa-arrow-right {
+    margin-left: 8px;
+}
+
+
+/********************\
+card css style
+\********************/
+.container1 {
+    width: 1050px;
+    margin: 70px auto;
+	/* padding: 70px 210px 70px 180px; */
+}
+.main-card {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	column-gap: 30px;
+	row-gap: 27px;
+}
+.single-card {
+	/* width: 330px;
+	height: 474px; */
+	padding: 15px;
+	box-shadow: 5px 5px 15px rgb(128, 128, 128);
+}
+.single-card:hover {
+	background: black;
+    box-shadow: 15px 15px 45px rgb(0, 0, 0);
+	color: white;
+	transition: 1s;
+}
+.single-card:hover .card-img{
+	transform: scale(1.1);
+	transition: 1s;
+}
+.single-card:hover .card-details p {
+	color: white;
+	transition: 1s;
+}
+.card-img {
+    /* width: 300px;
+    height: 256px; */
+	margin-bottom: 16px;
+}
+.card-details h2 {
+	font-size: 28px;
+}
+.card-details p {
+	line-height: 26px;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+/********************\
+Highlights css style
+\********************/
+.container2{
+    width: 1102px;
+    margin: 0 auto;
+}
+.highlight {
+	margin-bottom: 148px;
+}
+.highlight:hover .hilight-img {
+	transform: scale(1.2);
+	transition: 1s;
+    transition-timing-function: ease-in-out;
+}
+.hilight-heading{
+    width: 469px;
+    height: 309px;
+}
+.hilight-img{
+    width: 567px;
+    height: 427px;
+}
+.hilight-heading h1 {
+	font-size: 48px;
+}
+.hilight-heading p {
+	margin-bottom: 34px;
+    color: #6C6C6C;
+}
+
+/********************\
+videos css style
+\********************/
+.video-area {
+	margin-bottom: 50px;
+}
+.container3{
+    padding: 0px 156px 20px 182px;
+
+}
+.videos {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	gap: 25px;
+}
+iframe{
+    width: 100%;
+    margin-right: 20px;
+}
+
+/********************\
+sponsor css style
+\********************/
+.sponsorarea {
+	padding: 180px 0px;
+	background: linear-gradient(to right,#002886,#08f);
+}
+.all-sponsor h2 {
+    text-align: center;
+	font-size: 55px;
+	color: white;
+}
+.all-sponsor h2:hover {
+	color: #ff002d;
+	transform: scale(1.1);
+	transition: 1s;
+}
+.sponsors {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sponsors i {
+	font-size: 80px;
+	margin: 0 auto;
+    color: white;
+}
+.sponsors i:hover {
+	color: #ff002d;
+	transform: rotate(360deg);
+	transition: 1s ease-in-out;
+}
+
+/********************\
+Gallery css style
+\********************/
+.gallery {
+	margin-top: 100px;
+}
+.gallery h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 55px;
+	color: #E02C6D;
+}
+.all-images {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 50px;
+}
+.single-image:hover {
+	transform: scale(1.4);
+	transition: .5s;
+}
+/********************\
+footer css style
+\********************/
+footer{
+    margin-top: 158px;
+}
+.footer {
+    height: 110px;
+    width: 483px;
+    margin: 0 auto;
+    text-align: center;
+}
+.icons i {
+	font-size: 20px;
+	padding: 7px;
+	background: gray;
+	border-radius: 25px;
+	margin-right: 14px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.footer p {
+	font-size: 18px;
+	margin-bottom: 63px;
+}
+
+
+
+/********************\
+    media query
+\********************/
+
+
+/* for mobile screen  */
+
+@media only screen and (max-width:688px) {
+    .container,.container1,.container2{
+        width: 100%;
+    }
+    .container2{
+        padding: 0;
+    }
+    .bar{
+        display: block;
+    }
+    .bar span {
+        height: 4px;
+        width: 33px;
+        background: red;
+        display: block;
+        margin-bottom: 6px;
+    }
+    .menu-item {
+        padding-top: 36px;
+    }
+    .ul {
+        text-align: center;
+        display: none;
+    }
+    .menu-item ul li {
+        display: block;
+    }
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .headings h1 {
+	font-size: 36px;
+    margin-bottom: 20px;
+    }
+    .player {
+        height: 259px;
+        width: 329px;
+        margin-top: 124px;
+    }
+    .button {
+        margin-right: 31px;
+    }
+
+    .main-card, .videos,.all-images{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+    .highlight {
+        margin-bottom: 148px;
+        flex-direction: column;
+        align-items: start;
+    }
+    .hilight-heading {
+        width: 329px;
+        height: 299px;
+        margin-bottom: 29px;
+    }
+    .hilight-heading h1 {
+        font-size: 30px;
+    }
+    .hilight-img {
+        width: 100%;
+        height: 248px;
+    }
+    .single-image {
+        width: 100%;
+    }
+    .sponsorarea {
+        padding: 30px 0px;
+    }
+    .sponsors {
+        flex-direction: column;
+    }
+    .all-sponsor h2 {
+        font-size: 30px;
+    }
+    .footer {
+        height: 63px;
+        width: 330px;
+    }
+    .animation{
+        display: none;
+    }
+    .animation2{
+        display: none;
+    }
+
+}
+
+
+/* for tab screen  */
+@media only screen and (min-width:689px) and (max-width:992px){
+    .main-card, .all-images,.videos,.sponsors.all-images{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .menu-item ul li {
+        margin-right: 25px;
+    }
+    .container1{
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+    .container2 {
+        width: 100%;
+    }
+    iframe {
+        width: 100%;
+    }
+    .headings h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .player {
+        height: 297px;
+        width: 542px;
+    }
+    .hilight-heading h1 {
+        font-size: 35px;
+    }
+    .hilight-img {
+        width: 523px;
+        height: 364px;
+    }
+    .all-images {
+        gap: 25px;
+    }
+    .animation{
+        display: none;
+    }
+    .animation2{
+        display: none;
+    }
+
+}
+
+
+/********************\
+       The End
+\********************/
